@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "f62b1266-8672-4ef3-91b7-b32c732cda11",
+		"name": "NODE_40",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33366310"
+	},
+	"item": [
+		{
+			"name": "Get-like-Res",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/restaurant/get-like-res/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"get-like-res",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-like-User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/get-like-user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"get-like-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-rate-Res",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/restaurant/get-rate-res/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"restaurant",
+						"get-rate-res",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-rate-User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/user/get-rate-user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"get-rate-user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-rate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"1\",\r\n    \"resId\": \"2\",\r\n    \"amount\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/userRateRes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"userRateRes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-like",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"resId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/userLikeRes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"userLikeRes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post-Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 1,\r\n    \"foodId\": 3,\r\n    \"amount\": 3,\r\n    \"code\": \"CODE10001\",\r\n    \"arr_sub_id\": \"SUB0001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/userOderRes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"userOderRes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
